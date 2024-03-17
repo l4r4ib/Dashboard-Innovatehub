@@ -1,0 +1,91 @@
+/* responsive designs */
+
+/* Extra Small Screens */
+@media only screen and (max-width: 480px) {
+    .sidebar-menu i {
+        font-size: 40px; /* Increase the size of <i> tags */
+    }
+    .sidebar-menu a {
+        font-size: 0; /* Hide all text */
+    }
+}
+
+
+/* Small Screens */
+@media only screen and (max-width: 775px) {
+    .company-table * {
+        font-size: 5px; 
+    }
+
+}
+
+/* Medium Screens */
+@media only screen and (max-width: 991px) {
+    .company-table * {
+        font-size: 12px; /* Adjust the font size as needed */
+    }
+    .sort-content * {
+        font-size: 10px; /* Adjust the font size as needed */
+    }
+    .body-container {
+        grid-template-columns: 25% 75%;
+    }
+    .sub-items li {
+        font-size: 10px;
+    }
+    .company-name {
+        font-size: 10px;
+    }
+    .sidebar-menu a{   /* it was nav here */
+        font-size: 10px;
+       }
+   .sidebar{
+    overflow-x: hidden;
+    overflow-y: hidden;
+   }
+   .billing{
+    margin: 0;
+    padding: 1px;
+    }
+    .sidebar-header{
+        padding-top: 5px;
+    }
+    .subscription-box{
+        margin-top: 10px;
+        margin-bottom: 5px;
+       }
+    
+}
+
+/* Large Screens */
+@media only screen and  (max-width: 1199px) {
+   .logo img, .user-avatar img{
+    width: 25px;
+    height: auto;
+   }
+   .sidebar-menu a{   /* it was nav here */
+    font-size: 15px;
+   }
+   .subscription-box{
+    margin-top: 15px;
+   }
+   .subscription-box p{
+    font-size: 12px;
+   }
+    .billing{
+        font-size: 8px;
+    }
+    .company-table{
+        width: 95%;
+    }
+}
+
+/* Extra Large Screens */
+@media only screen and (min-width: 1200px) {
+    .subscription-box p{
+        font-size: 15px;
+       }
+    .billing{
+        font-size: 10px;
+    }
+}

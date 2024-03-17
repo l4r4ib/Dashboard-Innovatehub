@@ -1,0 +1,335 @@
+ /* variables and scrollbar editing */
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: "Nunito", sans-serif;
+ }
+
+ :root {
+     /* --primary-bg-color: #d5dadd; */
+     /* --text-color: #fff; */
+     --body-bg: #d9edff;
+     /* --hover-bg: #a89886; */
+     --container-bg: #ffffff;
+     /* --btn-bg: #b0a695; */
+     /* --modal-bg: #e6e6e6; */
+ }
+
+ ::-webkit-scrollbar {
+     width: 0px;
+ }
+
+ ::-webkit-scrollbar-thumb {
+     visibility: hidden;
+ }
+
+ ::-webkit-scrollbar-track {
+     visibility: hidden;
+ }
+
+ /* basic body styling  */
+ body {
+     min-height: calc(100% - 50px);
+     min-width: calc(100% - 50px);
+     margin: 10px;
+     border-radius: 25px;
+     background-color: var(--body-bg);
+ }
+
+ .body-container {
+     min-height: 100dvh;
+     background-color: var(--container-bg);
+     border-radius: 25px;
+     box-shadow: rgba(17, 17, 26, 0.5) 0px 0px 16px;
+     display: grid;
+     grid-template-columns: 20% 80%;
+     grid-template-rows: 8% 5% 1fr;
+     grid-template-areas:
+         "side nav"
+         "side sub-nav"
+         "side main"
+     ;
+     gap: 10px;
+ }
+
+ /*sidebar*/
+ .sidebar {
+     grid-area: side;
+     display: flex;
+     flex-direction: column;
+     height: 100dvh;
+     overflow-y: auto;
+     /* width: calc(21% - 45px); */
+     /*controlling the width of the sidebar*/
+     position: absolute;
+     left: 10px;
+     /* z-index: 1; */
+     border-radius: 25px;
+     /* border: 1px solid black; */
+     /* make better border UwU */
+ }
+
+ .bottom-div {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     z-index: 1;
+     height: 100px;
+     width: 100%;
+ }
+
+ .sidebar-header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin: 5px 10px 5px 10px;
+     /* border: 1px solid black; */
+ }
+
+ .left-container {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+ }
+
+ .info-container {
+     margin-left: 5px;
+ }
+
+ .grey-text {
+     color: grey;
+     font-size: 14px;
+     line-height: 0.2;
+ }
+
+ .grey-text-bold {
+     color: grey;
+     font-weight: bold;
+ }
+
+ .text-bold {
+     font-weight: bold;
+ }
+
+ .company-name {
+     font-size: 15px;
+ }
+
+ .user-avatar img {
+     width: 35px;
+     height: auto;
+     border-radius: 50%;
+ }
+
+
+
+
+ .sidebar-menu {
+     margin: 10px;
+ }
+
+ /* menu css */
+
+ .sidebar-menu a {
+     text-decoration: none;
+     color: inherit;
+ }
+
+ .sidebar-menu li {
+     list-style-type: none;
+ }
+
+ .team-container i,
+ .folder-container,
+ .bottom-div {
+     margin: 0 10px 0 5px;
+ }
+
+ .sub-items {
+     margin: 0 15px 0 15px;
+ }
+
+ .folder-container {
+     margin-top: 10px;
+ }
+
+ .add-folder,
+ .folder-name {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+
+ .sub-items {
+     overflow: hidden;
+     height: 0;
+     transition: height 0.3s ease;
+ }
+
+ .subscription-box {
+     margin-top: 10px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+
+ .subscription-box span {
+     margin: 0 10px 0 5px;
+ }
+
+ .billing {
+     border: 1px solid black;
+     color: white;
+     background-color: black;
+     border-radius: 5px;
+     padding: 2px;
+     font-size: 15px;
+ }
+
+ .folder-name,
+ .team-container li,
+ .empty-folder-name a,
+ .bottom-menu li {
+     border-radius: 5px;
+     padding: 3px;
+     font-weight: bold;
+ }
+
+ .folder-name:hover,
+ .team-container li:hover {
+     color: #00a2ff;
+     background-color: #f0f0f0;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+ }
+
+ .sub-items li {
+     padding: 2px;
+     font-size: 15px;
+ }
+
+ .sub-items li:hover {
+     color: #4cb8f7;
+     box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+
+ }
+
+ .bottom-menu li:hover {
+     color: #00a2ff;
+ }
+
+ .billing:hover {
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+ }
+
+ /* nav container css */
+ .navbar {
+     grid-area: nav;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px;
+ }
+
+ .search-bar {
+     display: flex;
+     align-items: center;
+     width: 40%;
+     height: 100%;
+ }
+
+ .search-bar input[type="text"] {
+     width: 100%;
+     height: 80%;
+     padding: 5px;
+     margin-right: 5px;
+     border-radius: 15px;
+     border: none;
+     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+ }
+
+ /* main container css */
+ .main-content {
+     grid-area: main;
+     width: 100%;
+ }
+
+ .table-container {
+    overflow-x: auto;
+    max-width: 100%; 
+}
+
+ .company-table {
+     width: 100%;
+     border-collapse: collapse;
+     overflow-x: auto;
+     border: 1px solid black;
+     margin: 0;
+ }
+
+ .company-table-header {
+     text-align: left;
+     padding: 10px;
+     border: 2px solid #ccc;
+ }
+
+ .company-table-data, .company-table-tags {
+     padding: 5px;
+     border: 1px solid #ddd;
+ }
+/* Hover effects for table rows */
+.company-row:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Slight shadow effect */
+}
+
+/* Hover effects for specific cells */
+ .company-table-data:hover,
+ .company-table-tags:hover {
+    background-color: #f0f0f0; /* Light gray background color */
+    font-size: 16px; /* Increase font size */
+}
+
+
+ 
+.avatar-stack{
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+ .avatar-stack .avatar {
+     bottom: 0;
+     left: 20;
+     transform: translate(-25%, 25%);
+     border-radius: 50%;
+     /* border: 1px solid #fff; */
+     background-color: #fff;
+     z-index: 1;
+     width: 20px;
+     height: auto;
+    margin: -7px;
+ }
+
+ 
+
+ .filter-bar, .sort-content, .meeting-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+ }
+ .sort-content{
+    grid-area:sub-nav;
+    justify-content: space-between;
+    width: 95%;
+
+ }
+ .filter-bar div, .meeting-bar div{
+    padding: 5px;
+    border-radius: 7px;
+    font-weight: bold;
+    background-color: rgb(226, 226, 226);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ }
+
+ .sort, .filter{
+    background-color: rgb(226, 226, 226);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+ }

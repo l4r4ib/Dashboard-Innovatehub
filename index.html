@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Innovative Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans
+    :opsz,wght@6..12,200;6..12,400;6..12,700&family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+    <!--font link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- boxicons link -->
+</head>
+
+<body>
+    <div class="body-container"> <!--container to add gutter styling for body-->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="left-container">
+                    <div class="logo">
+                        <img src="./images/logo.svg" alt="Logo">
+                    </div>
+                    <div class="info-container">
+                        <p class="grey-text">Inc</p>
+                        <p class="text-bold"> InnovateHub</p>
+                    </div>
+                </div>
+
+                <div class="user-avatar">
+                    <img src="./images/user-icon.svg" alt="usericon">
+                </div>
+            </div>
+            <nav class="sidebar-menu">
+                <ul class="team-container">
+                    <li><a href="#"> <i class='bx bxs-pen'></i>Design Team</a></li>
+                    <li><a href="#"> <i class='bx bxs-megaphone'></i>Marketing Team</a></li>
+                    <li><a href="#"> <i class='bx bx-expand-horizontal'></i>Development Team</a></li>
+                    <li class="grey-text"> <i class='bx bxs-book-add'></i>Create a team</li>
+                </ul>
+                <div class="folder-container">
+                    <div class="add-folder">
+                        <p class="grey-text-bold">Folders</p>
+                        <i class='bx bx-add-to-queue'></i>
+                    </div>
+                    <ul class="sub-menu"> <!--dropdown menu -->
+                        <li>
+                            <div class="folder-name">
+                                <a href="#"><i class='bx bxs-folder'></i>Products</a>
+                                <i class='bx bx-chevron-down'></i>
+                            </div>
+                            <ul class="sub-items">
+                                <li><a href="#">Roadmap</a></li>
+                                <li><a href="#">Feedback</a></li>
+                                <li><a href="#">Performance</a></li>
+                                <li><a href="#">Teams</a></li>
+                                <li><a href="#">Analytics</a></li>
+                                <li class="grey-text"> <i class='bx bx-book-add'></i> add new sub</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="sub-menu"> <!--dropdown menu -->
+                        <li>
+                            <div class="folder-name">
+                                <a href="#"><i class='bx bxs-folder'></i>Sales</a>
+                                <i class='bx bx-chevron-down'></i>
+                            </div>
+                            <ul class="sub-items">
+                                <li><a href="#">Leads Management</a></li>
+                                <li><a href="#">Sales Processes</a></li>
+                                <li><a href="#">Sales Collateral</a></li>
+                                <li class="grey-text"> <i class='bx bx-book-add'></i> add new sub</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="sub-menu"> <!--dropdown menu -->
+                        <li>
+                            <div class="folder-name">
+                                <a href="#"><i class='bx bxs-folder'></i>Designs</a>
+                                <i class='bx bx-chevron-down'></i>
+                            </div>
+                            <ul class="sub-items">
+                                <li><a href="#">Brand Identity</a></li>
+                                <li><a href="#">Motion Graphics</a></li>
+                                <li><a href="#">Packaging Design</a></li>
+                                <li><a href="#">Product Design</a></li>
+                                <li class="grey-text"> <i class='bx bx-book-add'></i> add new sub</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="sub-menu"> <!--dropdown menu -->
+                        <li>
+                            <div class="empty-folder-name">
+                                <a href="#"><i class='bx bxs-folder'></i>Office</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="sub-menu"> <!--dropdown menu -->
+                        <li>
+                            <div class="empty-folder-name">
+                                <a href="#"><i class='bx bxs-folder'></i>Legal</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-div">
+                    <ul class="sub-menu bottom-menu">
+                        <li>
+                            <a href="#"><i class='bx bxs-user-plus'></i>Invite Teammates</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class='bx bxs-help-circle'></i>Help and first steps</a>
+                        </li>
+                    </ul>
+                    <div class="subscription-box">
+                        <p> <span class="days">7</span>days left on trial</p> <span class="billing">Billing</span>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+        <nav class="navbar">
+            <h1>Products</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for">
+            </div>
+        </nav>
+        <div class="sort-content">
+            <div class="filter-bar">
+                <div class="all-brands"> <i class='bx bx-grid-small'></i>all brands <i class='bx bx-chevron-down'></i>
+                </div>
+                <div class="desk">desk <i class='bx bx-chevron-down'></i></div>
+                <div class="tags">tags <i class='bx bx-chevron-down'></i></div>
+                <div class="sort"><i class='bx bx-sort'></i>sort</div>
+                <div class="filter"><i class='bx bxs-filter-alt'></i>filter</div>
+            </div>
+            <div class="meeting-bar">
+                <div class="meeting"><i class='bx bx-add-to-queue'></i>Meeting</div>
+                <div class="import">Import/Export</div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="table-container">
+                <table class="company-table">
+                    <thead>
+                        <tr>
+                            <th class="company-table-header">Brand</th>
+                            <th class="company-table-header">Description</th>
+                            <th class="company-table-header">Members</th>
+                            <th class="company-table-header">Categories</th>
+                            <th class="company-table-header">Tags</th>
+                            <th class="company-table-header">Next Meeting</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="wix" class="company-row">
+                            <td class="company-table-data">Wix</td>
+                            <td class="company-table-data">Website Builder</td>
+                            <td class="company-table-data">
+                                <div class="avatar-stack">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                </div>
+                            </td>
+                            <td class="company-table-data">Tech</td>
+                            <td class="company-table-tags">#Website #Builder</td>
+                            <td class="company-table-data">Today at 10:00 AM</td>
+                        </tr>
+                        <tr id="shopify" class="company-row">
+                            <td class="company-table-data">Shopify</td>
+                            <td class="company-table-data">E-commerce Platform</td>
+                            <td class="company-table-data">
+                                <div class="avatar-stack">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                </div>
+                            </td>
+                            <td class="company-table-data">E-commerce</td>
+                            <td class="company-table-tags">#Ecommerce #Platform</td>
+                            <td class="company-table-data">Tomorrow at 2:00 PM</td>
+                        </tr>
+                        <tr id="mailchimp" class="company-row">
+                            <td class="company-table-data">Mailchimp</td>
+                            <td class="company-table-data">Email Marketing</td>
+                            <td class="company-table-data">
+                                <div class="avatar-stack">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                </div>
+                            </td>
+                            <td class="company-table-data">Marketing</td>
+                            <td class="company-table-tags">#Email #Marketing</td>
+                            <td class="company-table-data">Today at 3:30 PM</td>
+                        </tr>
+                        <tr id="paypal" class="company-row">
+                            <td class="company-table-data">PayPal</td>
+                            <td class="company-table-data">Online Payments</td>
+                            <td class="company-table-data">
+                                <div class="avatar-stack">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                </div>
+                            </td>
+                            <td class="company-table-data">Finance</td>
+                            <td class="company-table-tags">#Online #Payments</td>
+                            <td class="company-table-data">Today at 11:45 AM</td>
+                        </tr>
+                        <tr id="disney" class="company-row">
+                            <td class="company-table-data">Disney</td>
+                            <td class="company-table-data">Entertainment</td>
+                            <td class="company-table-data">
+                                <div class="avatar-stack">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                </div>
+                            </td>
+                            <td class="company-table-data">Entertainment</td>
+                            <td class="company-table-tags">#Entertainment</td>
+                            <td class="company-table-data">Tomorrow at 9:30 AM</td>
+                        </tr>
+                        <tr id="intercom" class="company-row">
+                            <td class="company-table-data">Intercom</td>
+                            <td class="company-table-data">Customer Support</td>
+                            <td class="company-table-data">
+                                <div class="avatar-stack">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                </div>
+                            </td>
+                            <td class="company-table-data">Tech</td>
+                            <td class="company-table-tags">#Customer #Support</td>
+                            <td class="company-table-data">Today at 4:00 PM</td>
+                        </tr>
+                        <tr id="google" class="company-row">
+                            <td class="company-table-data">Google</td>
+                            <td class="company-table-data">Search Engine</td>
+                            <td class="company-table-data">
+                                <div class="avatar-stack">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                </div>
+                            </td>
+                            <td class="company-table-data">Tech</td>
+                            <td class="company-table-tags">#Search #Engine</td>
+                            <td class="company-table-data">Today at 2:45 PM</td>
+                        </tr>
+                        <tr id="evernote" class="company-row">
+                            <td class="company-table-data">Evernote</td>
+                            <td class="company-table-data">Note-Taking App</td>
+                            <td class="company-table-data">
+                                <div class="avatar-stack">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                </div>
+                            </td>
+                            <td class="company-table-data">Productivity</td>
+                            <td class="company-table-tags">#Note-Taking</td>
+                            <td class="company-table-data">Tomorrow at 11:00 AM</td>
+                        </tr>
+                        <tr id="microsoft" class="company-row">
+                            <td class="company-table-data">Microsoft</td>
+                            <td class="company-table-data">Software Company</td>
+                            <td class="company-table-data">
+                                <div class="avatar-stack">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                </div>
+                            </td>
+                            <td class="company-table-data">Tech</td>
+                            <td class="company-table-tags">#Software</td>
+                            <td class="company-table-data">Today at 1:15 PM</td>
+                        </tr>
+                        <tr id="invision" class="company-row">
+                            <td class="company-table-data">InVision</td>
+                            <td class="company-table-data">Design Collaboration</td>
+                            <td class="company-table-data">
+                                <div class="avatar-stack">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                    <img src="./images/user-icon.svg" alt="User Avatar" class="avatar">
+                                </div>
+                            </td>
+                            <td class="company-table-data">Design</td>
+                            <td class="company-table-tags">#Design #Collaboration</td>
+                            <td class="company-table-data">Tomorrow at 3:30 PM</td>
+                        </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
